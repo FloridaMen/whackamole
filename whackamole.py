@@ -22,7 +22,6 @@ def main():
                     if (mole_x*32) < event.pos[0] < (mole_x*32+32) and (mole_y*32) < event.pos[1] < (mole_y*32+32):
                         mole_x = randint(0, 19)
                         mole_y = randint(0, 15)
-                        print(mole_x, " ", mole_y)
             screen.fill("light green")
             screen.blit(mole_image, mole_image.get_rect(topleft=(mole_x*32+3, mole_y*32+3)))
             for i in range(20):
